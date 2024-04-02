@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Formulário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <p>-> Input</p>
+        <label for="name"
+          >Name
+          <input type="text" id="name" />
+        </label>
+
+        <label for="email"
+          >E-mail
+          <input type="email" id="email" required />
+        </label>
+      </div>
+      <hr>
+
+      <div>
+        <p>-> Radio</p>
+        <label>
+          <input type="radio" name="preco" id="" value="150" /> R$150,00
+        </label>
+        <label>
+          <input type="radio" name="preco" id="" value="250" /> R$250,00
+        </label>
+        <label>
+          <input type="radio" name="preco" id="" value="350" /> R$350,00
+        </label>
+        <label>
+          <input type="radio" name="preco" id="" value="450" /> R$450,00
+        </label>
+      </div>
+      <hr>
+      
+      <div>
+        <p>-> Checkbox</p>
+
+        <input type="checkbox" name="linguagens" id="" value="js" /> JS <br>
+        <input type="checkbox" name="linguagens" id="" value="java" /> Java <br>
+        <input type="checkbox" name="linguagens" id="" value="php" /> PHP <br>
+        <input type="checkbox" name="linguagens" id="" value="csharp" /> C#
+      </div>
+      <hr>
+
+      <div>
+        <p>-> Select</p>
+        <label>
+            Selecione um Estado <br>
+            <select>
+                <option value="" selected>Selecione um Estado </option>
+                <option value="df">Distrito Federal</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </select>
+        </label>
+      </div>
+      <hr>
+
+      <div>
+        <label>Digite seu comentário aqui <br>
+            <textarea name="coment" id="" cols="30" rows="10" style="height: 100px; width: 300px;"></textarea>
+        </label>
+      </div>
+      <br />
+      <button type="submit">Enviar Formulário</button>
+    </form>
+  </body>
+</html>
