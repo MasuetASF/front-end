@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <script src='main.js'></script>
+
+    <style>
+        /* Especificidade: a cada '1' se sobrepoe o menor */
+
+        /* 0.0.0.1 */
+        p{
+            color: red;
+        }
+
+        /* 0.0.1.1 */
+        .nova-cor{
+            color: cornflowerblue;
+        }
+
+        /* 0.1.1.1  */
+        #nova-cor-id-1,
+        #nova-cor-id-2{
+            color: darkgray;
+        }
+
+        /* 0.1.1.1  */
+
+    </style>
+</head>
+<body>
+    <p c>Texto 1.</p>
+    <p class="nova-cor">Texto 2.</p>
+    <p class="nova-cor">Texto 3.</p>
+    <p id="nova-cor-id-1" class="nova-cor">Texto 4.</p>
+    <!-- /* 0.1.1.1  */ -->
+    <p id="nova-cor-id-2" class="nova-cor" style="color: darkseagreen;">Texto 5.</p>
+</body>
+</html>

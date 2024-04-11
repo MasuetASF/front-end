@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>14-shadow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #div1{
+            padding: 30px;
+            background: palevioletred;
+            font-size: 22px;
+
+            /* eixo X (->) / Y (^) /desfoque   / cor    */
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2) ; 
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+        }
+        #div2{
+            position: relative;
+            padding: 30px;
+            background: palevioletred;
+            font-size: 22px;
+
+            transition: all 0.5s;            
+        }
+        #div2:hover{
+            bottom: 5px;
+            text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        texto 1
+    </div>
+    <br><br>
+    <div id="div2">
+        texto 1
+    </div>
+</body>
+</html>
